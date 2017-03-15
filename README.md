@@ -27,13 +27,12 @@ You can start Office Hagrid locally by running:
 You'll see some start up output and a prompt:
 
     [Sat Feb 28 2015 12:38:27 GMT+0000 (GMT)] INFO Using default redis on localhost:6379
-    Office Hagrid>
+    office-hagrid
 
-Then you can interact with Office Hagrid by typing `Office Hagrid help`.
+Then you can interact with Office Hagrid by typing `office-hagrid help`.
 
-    Office Hagrid> Office Hagrid help
-    Office Hagrid animate me <query> - The same thing as `image me`, except adds [snip]
-    Office Hagrid help - Displays all of the help commands that Office Hagrid knows about.
+    office-hagrid animate me <query> - The same thing as `image me`, except adds [snip]
+    office-hagrid help - Displays all of the help commands that Office Hagrid knows about.
     ...
 
 ### Configuration
