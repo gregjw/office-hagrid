@@ -1,7 +1,9 @@
 module.exports = (robot) ->
   robot.listen(
     (message) ->
-      message.user.name is "New Relic"
+      match = message.match(/alert opened/)
+      message.user.name is "New Relic" and match
     (response) ->
-      response.reply "Ack"
+      spawn = require("child_process").spawn;
+      spawn("sh", ["-c", "aplay /home/pi/sounds/kill-bill-short.wav"], { stdio: "inherit" });
   )
