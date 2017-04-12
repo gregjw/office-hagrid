@@ -1,7 +1,7 @@
 module.exports = (robot) ->
   robot.listen(
     (message) ->
-      match = message.match(/alert opened/)
+      match = message.match(/New alert/)
       message.user.name is "New Relic" and match
     (response) ->
       spawn = require("child_process").spawn;
